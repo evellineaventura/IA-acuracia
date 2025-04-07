@@ -1,0 +1,11 @@
+def calcular_acuracia :
+    if total_previsoes == 0:
+        return 0  
+    acuracia = previsoes_corretas / total_previsoes
+    return acuracia
+
+previsoes_corretas = 85
+total_previsoes = 100
+
+acuracia = calcular_acuracia(previsoes_corretas, total_previsoes)
+print(f"Acurácia: {acuracia:.2%}")
